@@ -1,29 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
 
 header::before {
-    content: "";
+    content: " ";
     /* background-color:rgb(233, 140, 140); */
-    background-image:url(../images/image\ 1.png);
-    height: 100vh;
-    width:100vw;
-    display:block;
-    position:absolute;
-    z-index:-10;
-
-
+    background-image: url(/assets/images/image\ 1.png);
+    height: 42vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
 }
 
- h1{
-    font-family: "Poiret One", sans-serif;
-    color:#CC8614;
-    font-size:40px;
-    font-weight:700;
+h1{
+    font-family:"Nanum Myeongjo",sans-serif;
+    color: #CC8614;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 6
 }
- 
+
 h2{
-    font-family: "Nanum Myeongjo", serif;
-    color:#730811;
+    font-family:"Poiret One",sans-serif;
+    color: #c52230;
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+    line-height: 3
 }
-/* css */
+
+
+body{
+    background-color: #f0f0f0bd;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+}
+
+ul {
+        text-align: center;
+}
+
+
+
+footer{
+    content: " ";
+    background-image: url(../images/header_filtro.png);
+    height: 50vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
+    background-position: bottom;
+}
