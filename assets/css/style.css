@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
 
+:root {
+    --color-destak: #730811;
+    --color-black: #1B1B1B;
+    --color-white: #ECECEC;
+    --font-title: "Nanum Myeongjo",sans-serif;
+    --font-body: "Nixie One", sans-serif;
+}
+header{
+    height:52vh;
+}
+
 header::before {
     content: " ";
     /* background-color:rgb(233, 140, 140); */
@@ -12,6 +23,31 @@ header::before {
     background-size: cover;
 }
 
+#secao-apresentacao {
+    display: flex;
+    padding: 2rem;
+   /*1rem=16px;*/
+   align-items: center;
+}
+
+#texto-apresentacao h2{
+    font-size: 2.5rm;
+    font-family:var(--font-title);
+}
+#secao-apresentacao img {
+    border-radius:50%;
+
+}
+
+#texto-apresentacao p {
+
+    font-size: 1.5rm;
+    font-family:var(--font-body);
+}
+
+#texto-apresentacao {
+    color: var(--color-destak);
+}
 h1{
     font-family:"Nanum Myeongjo",sans-serif;
     color: #CC8614;
@@ -35,6 +71,7 @@ h2{
 body{
     background-color: #f0f0f0bd;
     text-align: center;
+    font-family: "Nixie One", sans-serif;
 }
 
 .container {
