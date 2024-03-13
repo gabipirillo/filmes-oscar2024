@@ -7,6 +7,10 @@
     --font-title: "Nanum Myeongjo",sans-serif;
     --font-body: "Nixie One", sans-serif;
 }
+*{
+    margin:0;
+    list-style: none;
+}
 header{
     height:52vh;
 }
@@ -96,4 +100,49 @@ footer{
     z-index: -10;
     background-size: cover;
     background-position: bottom;
+}
+#secao-projetos{
+    background-color:burlywood;
+    height: 100vh;
+}
+
+#secao-projetos ul{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.card { 
+    max-width: 300px;
+    height: 420px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-text {
+    position: absolute;
+    top:0;
+    opacity: 0;
+    transition: opacity .8s, top .5s;
+}
+
+.card:hover .card-text{
+    opacity: 1;
+    top: 15%;
+}
+
+.card:hover .image-wrapper {
+    opacity: .2;
 }
