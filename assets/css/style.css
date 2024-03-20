@@ -70,10 +70,12 @@ h2{
     font-weight: bold; 
     line-height: 3
 }
-
+#subtitulo {
+line-height:6
+}
 
 body{
-    background-color: #f0f0f0bd;
+    background-color: beige;
     text-align: center;
     font-family: "Nixie One", sans-serif;
 }
@@ -92,7 +94,7 @@ ul {
 
 footer{
     content: " ";
-    background-image: url(../images/header_filtro.png);
+    background-image: url(/assets/images/palco.png);
     height: 50vh;
     width: 100vw;
     display: block;
@@ -107,23 +109,23 @@ footer{
 }
 
 #secao-projetos ul{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr; --> maneira "analogica" = sem função*/
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
 }
 
-.card { 
+.card{
     max-width: 300px;
     height: 420px;
     position: relative;
     cursor: pointer;
 }
 
-.image-wrapper {
+.image-wrapper{
     width: 100%;
     height: 100%;
     overflow: hidden;
-
 }
 
 .image-wrapper img{
@@ -131,9 +133,10 @@ footer{
     width: 100%;
     height: 100%;
 }
-.card-text {
+
+.card-text{
     position: absolute;
-    top:0;
+    top: 0;
     opacity: 0;
     transition: opacity .8s, top .5s;
 }
@@ -143,6 +146,37 @@ footer{
     top: 15%;
 }
 
-.card:hover .image-wrapper {
-    opacity: .2;
+.card:hover .image-wrapper{
+    opacity: .3;
+}
+
+#secao-orcamento {
+    height: 100vh;
+}
+#secao-orcamento h2{
+    font-family:var(--font-title);
+}
+
+#secao-orcamento form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    grid-column: 1 / 3;
+}
+
+input[type=radio],
+input[type=radio],
+input[type=range]
+{
+    accent-color: var(--color-destak);
 }
