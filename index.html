@@ -10,8 +10,9 @@
     
     <header>
     <h1>The Oscars </h1>
-    <h2><b><p id="subtitulo">INDICAÇÕES AO OSCAR</p></b></h2>
     </header>
+    <h2><b><p id="subtitulo">INDICAÇÕES AO OSCAR</p></b></h2>
+
 
     <section id="secao-apresentacao">
             <img src="https://avatars.githubusercontent.com/u/160127072?v=4.png" alt="Foto da Amanda" width="200">
@@ -164,7 +165,7 @@
 
     <section id="secao-projetos">
         <p>
-            <h2> Premios Oscar 2024 </h2>
+            <h2> Prêmios Oscar 2024 </h2>
         </p>
         <ul>
             <li>
@@ -185,7 +186,7 @@
                     </div>
                     <div class="card-text">
                         <h2>Ganhador melhor diretor </h2>
-                        <p><b>CHRISTOPHER NOLAN - com o filme Oppernheimer</b></p>
+                        <p><b>CHRISTOPHER NOLAN - com o filme Oppenheimer</b></p>
                     </div>
                 </div>
             </li>
@@ -196,7 +197,7 @@
                     </div>
                     <div class="card-text">
                         <h2>Ganhadora melhor atriz</h2>
-                        <p><b>EMMA STONE- com o filme Poor things</b></p>
+                        <p><b>EMMA STONE- com o filme Poor Things</b></p>
                     </div>
                 </div>
             </li>
@@ -207,7 +208,7 @@
                     </div>
                     <div class="card-text">
                         <h2>Ganhador melhor ator </h2>
-                        <p><b>CILLIAN MURPHY - com o filme Oppernheimer</b></p>
+                        <p><b>CILLIAN MURPHY - com o filme Oppenheimer</b></p>
                     </div>
                 </div>
             </li>
@@ -215,38 +216,42 @@
     </section>
 <section>
     <section id="secao-orcamento">
-    <h2>Faça um orçamento</h2>
+    <h2>Calcule quantas horas você passou assistindo estes filmes!</h2>
     <form action="">
         <div class="campo linha">
-        <label for="nome">Nome</label>
+        <label for="nome">Nome do filme</label>
         <input type="text" id="nome">
     </div>
-            <div class="campo"></div>
-                <label for="paginas">Qtde de Páginas</label>
-                <input type="number" id="'paginas" min="1" value="1">
             <div class="campo">
-                <label for="tipo">Tipo de Site</label>
+                <label for="paginas">Quantas vezes você assistiu este filme?</label>
+                <input type="number" id="'paginas" min="1" value="1">
+            </div>
+            <div class="campo">
+                <label for="tipo">Local onde você assistiu este filme</label>
                 <select id="tipo">
-                        <option value="1">estático</option>
-                <option value="2">dinâmico</option>
+                        <option value="1">cinema</option>
+                <option value="2">casa</option>
     </select>
     </div>
-            <div class=" linha">
-            <label for="">precisa de protótipo?</label>
-            <div>
-                <input type="radio" name ="prototipo" id="prototipo_sim">
-                <label for="prototipo_sim">sim, preciso</label>
-                <input type="radio" name ="prototipo" id="prototipo_nao">
-                <label for="prototipo_nao">não, já tenho</label>
+            <div class="linha"> 
+            <p><label for="">Assistiu antes da premiação do Oscar?</label></p>
+                <div>
+                    <input type="radio" name ="prototipo" id="prototipo_sim">
+                    <label for="prototipo_sim">sim</label>
+                    <input type="radio" name ="prototipo" id="prototipo_nao">
+                    <label for="prototipo_nao">não</label>
+                </div>
             </div>
-
-            <input type="checkbox" id="js">
-            <label for="js">tem automação com JS</label>
-
-            <label for="prazo">Prazo</label>
+            <label for="prazo">Dê uma nota ao filme arrastando essa barra ao lado</label>
             <input type="range" min="1" max= "12" id="prazo">
 
-            <button>Enviar Orçamento</button>
+            <input type="checkbox" id="js">
+            <label for="js">Recomendaria para seus familiares e amigos?</label>
+
+            
+
+            <button>Calcular</button>
+            <button>Adicionar outro filme</button>
         </select>
     </form>
 </section>
