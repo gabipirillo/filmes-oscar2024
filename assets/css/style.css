@@ -181,3 +181,12 @@ input[type=range]
 {
     accent-color: var(--color-destak);
 }
+
+.meu-botao {
+    background-color: #730811;
+    color: #ECECEC;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer
+}

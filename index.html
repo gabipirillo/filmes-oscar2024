@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Oscars</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 <body>
     
@@ -224,7 +225,8 @@
     </div>
             <div class="campo">
                 <label for="paginas">Quantas vezes você assistiu este filme?</label>
-                <input type="number" id="'paginas" min="1" value="1">
+                <input type="number" id="paginas" min="1" value="1">
+                <output id="valor">3 horas</output>
             </div>
             <div class="campo">
                 <label for="tipo">Local onde você assistiu este filme</label>
@@ -245,14 +247,18 @@
             <label for="prazo">Dê uma nota ao filme arrastando essa barra ao lado</label>
             <input type="range" min="1" max= "12" id="prazo">
 
+                
+
             <input type="checkbox" id="js">
             <label for="js">Recomendaria para seus familiares e amigos?</label>
 
-            
+            <button type="button" class="meu-botao"> Enviar</button>
+            <button type="button" class="meu-botao">Adicionar outro filme</button>
 
-            <button>Calcular</button>
-            <button>Adicionar outro filme</button>
+    
         </select>
+
+    
     </form>
 </section>
 
