@@ -190,3 +190,49 @@ input[type=range]
     border-radius: 5px;
     cursor:pointer
 }
+
+table {
+    width: 35%;
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+
+}
+
+th, td {
+    text-align: center; /* Centraliza o conteúdo das células */
+
+}
+
+table td {
+    color: #730811; /* Definindo a cor do texto para as células da tabela */
+}
+
+.filme-header {
+    color: #c52230; /* Definindo a cor do texto para o cabeçalho do filme */
+}
+
+.minutos-header {
+    color: #c52230; /* Definindo a cor do texto para o cabeçalho dos minutos */
+}
+
+.formulario-clonado {
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    max-width: 500px; /* Define uma largura máxima para o formulário */
+}
+/* Estilo para centralizar os formulários clonados */
+#formulario-clonado {
+    display: flex;
+    flex-direction: column; /* Alinhar os formulários verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+}
+
+/* Estilo para ajustar a largura dos formulários clonados */
+#formulario-clonado form {
+    width: 50%; /* Você pode ajustar a largura conforme necessário */
+    margin-bottom: 50px; /* Espaçamento entre os formulários clonados */
+}
+
+#formulario button {
+    display: inline-block;
+    vertical-align: middle; /* Alinha os botões verticalmente */
+    margin-right: 10px; /* Espaçamento entre os botões */
+}

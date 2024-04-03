@@ -48,16 +48,16 @@
 
     <h2> Filmes Indicicados: Melhor filme 2024 </h2>
     <ul>
-        <p> Pobres Criaturas
-        <p> &#127942; Oppenheimer
-        <p>Barbie
-        <p>Anatomia de uma Queda
-        <p>Maestro
-        <p>Vidas Passadas
-        <p>Zona de Interesse
-        <p>Os Rejeitados
-        <p>Assassinos da Lua das Flores
-        <p>American Fiction
+        <p> Pobres Criaturas           
+        <p> &#127942; Oppenheimer       
+        <p>Barbie                  
+        <p>Anatomia de uma Queda     
+        <p>Maestro                   
+        <p>Vidas Passadas              
+        <p>Zona de Interesse       
+        <p>Os Rejeitados            
+        <p>Assassinos da Lua das Flores  
+        <p>American Fiction            
         </p>
     </ul>
     
@@ -217,49 +217,128 @@
     </section>
 <section>
     <section id="secao-orcamento">
-    <h2>Calcule quantas horas você passou assistindo estes filmes!</h2>
-    <form action="">
-        <div class="campo linha">
-        <label for="nome">Nome do filme</label>
-        <input type="text" id="nome">
-    </div>
-            <div class="campo">
-                <label for="paginas">Quantas vezes você assistiu este filme?</label>
-                <input type="number" id="paginas" min="1" value="1">
-                <output id="valor">3 horas</output>
+        <h2> Tabela com a duração de cada filme </h2>
+    </form>
+    <p> 
+    <table border="1">
+        <tr>
+
+            <th class="filme-header">FILME</th> <!-- Usando a classe "filme-header" para o cabeçalho do filme -->
+            <th class="minutos-header">MINUTOS</th> <!-- Usando a classe "minutos-header" para o cabeçalho dos minutos -->
+        </tr>
+        <tr>
+            <td>Pobres Criaturas</td>
+            <td>141</td>
+        </tr>
+        <tr>
+            <td>Oppenheimer</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>Barbie</td>
+            <td>111</td>
+        </tr>
+        <tr>
+            <td>Anatomia de uma Queda</td>
+            <td>152</td>
+        </tr>
+        <tr>
+            <td>Maestro</td>
+            <td>129</td>
+        </tr>
+        <tr>
+            <td>Vidas Passadas</td>
+            <td>106</td>
+        </tr>
+        <tr>
+            <td>Zona de Interesse</td>
+            <td>106</td>
+        </tr>
+        <tr>
+            <td>Os Rejeitados</td>
+            <td>133</td>
+        </tr>
+        <tr>
+            <td>Assassinos da Lua das Flores</td>
+            <td>206</td>
+        </tr>
+        <tr>
+            <td>American Fiction</td>
+            <td>117</td>
+        </tr>
+        
+    </table>
+</p>
+<h2>Calcule quantas horas você passou assistindo estes filmes!</h2>
+<form action="" id="formulario">
+    <div class="campo linha">
+        <label for="tipo">Nome do filme:</label>
+        <select id="tipo">
+            <option value="1">Pobres Criaturas</option>
+            <option value="2">Oppenheimer</option>
+            <option value="3">Barbie</option>
+            <option value="4">Anatomia de uma Queda</option>
+            <option value="5">Maestro</option>
+            <option value="6">Vidas Passadas</option>
+            <option value="7">Zona de Interesse</option>
+            <option value="8">Os Rejeitados</option>
+            <option value="9">Assassinos da Lua das Flores</option>
+            <option value="10">American Fiction</option>
+        </select>
+</div>
+        <div class="campo">
+            <label for="paginas">Quantas vezes você assistiu este filme?</label>
+            <input type="number" id="paginas">
+        </div>
+        <div class="campo">
+            <label for="tipo">Local onde você assistiu este filme</label>
+            <select id="tipo">
+                <option value="1">cinema</option>
+                <option value="2">streaming</option>
+            </select>
+        </div>
+        <div class="linha"> 
+        <p><label for="">Assistiu antes da premiação do Oscar?</label></p>
+            <div>
+                <input type="radio" name ="prototipo" id="prototipo_sim">
+                <label for="prototipo_sim">sim</label>
+                <input type="radio" name ="prototipo" id="prototipo_nao">
+                <label for="prototipo_nao">não</label>
             </div>
-            <div class="campo">
-                <label for="tipo">Local onde você assistiu este filme</label>
-                <select id="tipo">
-                        <option value="1">cinema</option>
-                <option value="2">casa</option>
-    </select>
+        </div>
+    
+    <div class="campo">
+        <label for="prazo">Dê uma nota ao filme arrastando essa barra ao lado</label>
+        <input type="range" min="1" max="10" id="prazo">
     </div>
-            <div class="linha"> 
-            <p><label for="">Assistiu antes da premiação do Oscar?</label></p>
-                <div>
-                    <input type="radio" name ="prototipo" id="prototipo_sim">
-                    <label for="prototipo_sim">sim</label>
-                    <input type="radio" name ="prototipo" id="prototipo_nao">
-                    <label for="prototipo_nao">não</label>
-                </div>
-            </div>
-            <label for="prazo">Dê uma nota ao filme arrastando essa barra ao lado</label>
-            <input type="range" min="1" max= "12" id="prazo">
 
-                
+            
 
-            <input type="checkbox" id="js">
-            <label for="js">Recomendaria para seus familiares e amigos?</label>
+      <div class="campo">
+<label>
+    <input type="checkbox" id="js">
+    Recomendaria para seus familiares e amigos?
+</label>
+</div>
+        <button type="button" class="meu-botao enviar"> Enviar</button>
+        <button type="button" class="meu-botao adicionar-filme">Adicionar outro filme</button>
+    </form>
+    <p></p>
 
-            <button type="button" class="meu-botao"> Enviar</button>
-            <button type="button" class="meu-botao">Adicionar outro filme</button>
+    <div id="resultado"></div>
+    
+    <p></p>
+</section>
+<div id="formulario-clonado"></div> <!-- Espaço reservado para os formulários clonados -->
+</section>
 
+<p>
+
+</p>
     
         </select>
 
-    
-    </form>
+
 </section>
 
 
@@ -271,4 +350,11 @@
 
 </body>
 </html>
- 
+ </section>
+
+<footer>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</footer>
+
+</body>
+</html>
